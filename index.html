@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiCraft Solutions — Digital Transformation Partner</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <span>DigiCraft</span>
+        </div>
+    </div>
+
+    <!-- Floating Nav -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Digi<strong>Craft</strong></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero">
+        <div class="hero-bg-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <i class="fas fa-rocket"></i> Trusted by 100+ Businesses Across India
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="100">
+                We Build <span class="gradient-text" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                From stunning websites to AI-powered automation — we help Indian businesses 
+                go digital, grow faster, and serve customers 24/7.
+            </p>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                <a href="#services" class="btn btn-primary">
+                    <span>Explore Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="demo-reel.html" class="btn btn-outline">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Watch Demo Reel</span>
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat">
+                    <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="9">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Services Offered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="24">0</span><span class="stat-plus">/7</span>
+                    <span class="stat-label">Support Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ==================== DEMO REEL MODAL ==================== -->
+    <div class="video-modal" id="demoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            <div class="video-wrapper">
+                <iframe id="demoVideo" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual" data-aos="fade-right">
+                    <div class="about-image-stack">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="Team collaboration" class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=300&h=200&fit=crop" alt="Working on code" class="about-img-float">
+                        <div class="experience-badge">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <span class="section-tag"><i class="fas fa-info-circle"></i> About Us</span>
+                    <h2>We're Not Just Developers.<br>We're Your <span class="gradient-text">Digital Growth Partners.</span></h2>
+                    <p class="about-description">
+                        Based in India, DigiCraft Solutions is a full-service digital agency helping businesses 
+                        transform their operations through cutting-edge technology. Whether you're a local shop 
+                        needing a website or an enterprise seeking AI automation — we've got you covered.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>End-to-End Solutions</h4>
+                                <p>From concept to deployment & ongoing support</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>India-First Pricing</h4>
+                                <p>World-class quality at competitive Indian rates</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Modern Tech Stack</h4>
+                                <p>React, Flutter, Python, AI/ML, Cloud & more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Tech we use:</span>
+                        <div class="tech-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" title="Flutter">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" title="AWS">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Our Services</span>
+                <h2>Comprehensive Digital Solutions<br>for <span class="gradient-text">Every Business Need</span></h2>
+                <p>We offer a full spectrum of digital services tailored for Indian businesses — from startups to enterprises.</p>
+            </div>
+
+            <!-- Service 1: Website Design & Development -->
+            <div class="service-detail" id="service-web" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <span class="service-number">01</span>
+                        <h3>Website Design & Development</h3>
+                        <p class="service-desc">
+                            Your website is your digital storefront. We create stunning, fast, and mobile-responsive 
+                            websites that convert visitors into customers. From simple landing pages to complex 
+                            e-commerce platforms — we build it all.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> Custom WordPress & Shopify Sites</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> React/Next.js Web Applications</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> E-Commerce with Payment Gateway</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> SEO-Optimized & Mobile-First</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Admin Dashboard & CMS</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> SSL, Hosting & Domain Setup</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹15,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop" alt="Website Development">
+                            <div class="mockup-overlay">
+                                <div class="play-btn" data-video="https://www.youtube.com/embed/FN7ALfpGxiI">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span>Watch Demo</span>
+                            </div>
+                        </div>
+                        <div class="service-mini-stats">
+                            <div class="mini-stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>< 2s Load Time</span>
+                            </div>
+                            <div class="mini-stat">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>100% Responsive</span>
+                            </div>
+                            <div class="mini-stat">
+                                <i class="fas fa-search"></i>
+                                <span>SEO Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: WhatsApp Business Automation -->
+            <div class="service-detail reverse" id="service-whatsapp" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <span class="service-number">02</span>
+                        <h3>WhatsApp Business Automation</h3>
+                        <p class="service-desc">
+                            India has 500M+ WhatsApp users. We help you leverage the WhatsApp Business API to 
+                            automate customer communication, send bulk messages, create product catalogs, 
+                            and build ordering systems — all on WhatsApp.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> WhatsApp Business API Integration</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Automated Order & Booking System</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Bulk Message & Broadcast Campaigns</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Product Catalog on WhatsApp</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Payment Collection via WhatsApp</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Customer Support Automation</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹10,000<span class="price-period">/month</span></span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup whatsapp-mock">
+                            <div class="whatsapp-chat-demo">
+                                <div class="wa-header">
+                                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcabd36?w=40&h=40&fit=crop" alt="Business">
+                                    <div>
+                                        <strong>DigiCraft Store</strong>
+                                        <small>online</small>
+                                    </div>
+                                </div>
+                                <div class="wa-messages">
+                                    <div class="wa-msg received">
+                                        <p>Hi! 👋 Welcome to DigiCraft Store. How can I help you?</p>
+                                        <span class="wa-time">10:30 AM</span>
+                                    </div>
+                                    <div class="wa-msg sent">
+                                        <p>I want to see your products</p>
+                                        <span class="wa-time">10:31 AM</span>
+                                    </div>
+                                    <div class="wa-msg received">
+                                        <p>Here's our catalog 📋</p>
+                                        <div class="wa-catalog">
+                                            <div class="catalog-item">
+                                                <div class="catalog-img">🛍️</div>
+                                                <div><strong>Premium Pack</strong><br>₹4,999</div>
+                                            </div>
+                                            <div class="catalog-item">
+                                                <div class="catalog-img">⚡</div>
+                                                <div><strong>Starter Pack</strong><br>₹1,999</div>
+                                            </div>
+                                        </div>
+                                        <span class="wa-time">10:31 AM</span>
+                                    </div>
+                                    <div class="wa-msg received">
+                                        <p>Tap to order! Payment via UPI accepted ✅</p>
+                                        <span class="wa-time">10:31 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: AI Chatbot Development -->
+            <div class="service-detail" id="service-chatbot" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large chatbot">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="service-number">03</span>
+                        <h3>AI Chatbot Development</h3>
+                        <p class="service-desc">
+                            Provide 24/7 customer support without hiring extra staff. Our AI-powered chatbots 
+                            understand natural language, answer FAQs, book appointments, qualify leads, 
+                            and seamlessly hand off to humans when needed.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> GPT/AI-Powered Conversations</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Website, WhatsApp & Instagram Bots</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Lead Qualification & Capture</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Appointment Booking Bot</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Multi-language Support (Hindi, English)</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Analytics & Conversation Insights</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹25,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <div class="chatbot-demo">
+                                <div class="bot-header">
+                                    <div class="bot-avatar">
+                                        <i class="fas fa-robot"></i>
+                                        <span class="online-dot"></span>
+                                    </div>
+                                    <div>
+                                        <strong>AI Assistant</strong>
+                                        <small>Always online</small>
+                                    </div>
+                                </div>
+                                <div class="bot-messages">
+                                    <div class="bot-msg bot">
+                                        <p>Hello! 🤖 I'm your AI assistant. I can help you with:</p>
+                                    </div>
+                                    <div class="bot-quick-replies">
+                                        <button>📅 Book Appointment</button>
+                                        <button>💰 Get Pricing</button>
+                                        <button>❓ FAQs</button>
+                                        <button>👤 Talk to Human</button>
+                                    </div>
+                                    <div class="bot-msg user">
+                                        <p>What are your working hours?</p>
+                                    </div>
+                                    <div class="bot-msg bot">
+                                        <div class="typing-indicator">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                    <div class="bot-msg bot delayed">
+                                        <p>We're open Mon-Sat, 9 AM to 7 PM IST. Would you like to book a visit? 📅</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Mobile App Development -->
+            <div class="service-detail reverse" id="service-app" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large app">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="service-number">04</span>
+                        <h3>Mobile App Development</h3>
+                        <p class="service-desc">
+                            Turn your business idea into a powerful mobile app. We build cross-platform apps 
+                            using Flutter and React Native that work on both Android and iOS — saving you 
+                            time and cost without compromising quality.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> Flutter & React Native Apps</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Android + iOS from Single Codebase</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Food Ordering & Delivery Apps</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Booking & Service Apps</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Push Notifications & Analytics</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Play Store & App Store Publishing</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹50,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="app-screen">
+                                        <div class="app-header-demo">
+                                            <span>🍔 FoodExpress</span>
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                        <div class="app-search">
+                                            <i class="fas fa-search"></i>
+                                            <span>Search restaurants...</span>
+                                        </div>
+                                        <div class="app-categories">
+                                            <span class="app-cat active">🍕 Pizza</span>
+                                            <span class="app-cat">🍔 Burger</span>
+                                            <span class="app-cat">🍜 Chinese</span>
+                                        </div>
+                                        <div class="app-card">
+                                            <div class="app-card-img">🍕</div>
+                                            <div class="app-card-info">
+                                                <strong>Pizza Palace</strong>
+                                                <span>⭐ 4.5 · 25 min · ₹200 for two</span>
+                                                <span class="app-tag">30% OFF</span>
+                                            </div>
+                                        </div>
+                                        <div class="app-card">
+                                            <div class="app-card-img">🍔</div>
+                                            <div class="app-card-info">
+                                                <strong>Burger Junction</strong>
+                                                <span>⭐ 4.2 · 20 min · ₹300 for two</span>
+                                                <span class="app-tag">Free Delivery</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: CRM & Business Process Automation -->
+            <div class="service-detail" id="service-crm" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large crm">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <span class="service-number">05</span>
+                        <h3>CRM & Business Process Automation</h3>
+                        <p class="service-desc">
+                            Stop doing repetitive tasks manually. We set up CRM systems and automate your 
+                            workflows — from lead tracking to invoice generation, follow-up emails to 
+                            inventory management. Save 10+ hours every week.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> Zoho / HubSpot CRM Setup</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Custom CRM Development</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Workflow Automation (Zapier/Make)</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Lead Tracking & Sales Pipeline</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Automated Email & SMS Follow-ups</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Reports & Analytics Dashboard</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹20,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <div class="crm-demo">
+                                <div class="crm-header">
+                                    <h4><i class="fas fa-chart-line"></i> Sales Dashboard</h4>
+                                    <span class="crm-badge">Live</span>
+                                </div>
+                                <div class="crm-stats">
+                                    <div class="crm-stat-card">
+                                        <i class="fas fa-users"></i>
+                                        <div>
+                                            <strong>1,234</strong>
+                                            <small>Total Leads</small>
+                                        </div>
+                                    </div>
+                                    <div class="crm-stat-card">
+                                        <i class="fas fa-handshake"></i>
+                                        <div>
+                                            <strong>89</strong>
+                                            <small>Deals Won</small>
+                                        </div>
+                                    </div>
+                                    <div class="crm-stat-card">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <div>
+                                            <strong>₹12.5L</strong>
+                                            <small>Revenue</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="crm-pipeline">
+                                    <div class="pipeline-stage">
+                                        <span class="stage-label">New</span>
+                                        <div class="stage-bar" style="width: 100%"></div>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="pipeline-stage">
+                                        <span class="stage-label">Qualified</span>
+                                        <div class="stage-bar" style="width: 70%"></div>
+                                        <span>32</span>
+                                    </div>
+                                    <div class="pipeline-stage">
+                                        <span class="stage-label">Proposal</span>
+                                        <div class="stage-bar" style="width: 45%"></div>
+                                        <span>18</span>
+                                    </div>
+                                    <div class="pipeline-stage">
+                                        <span class="stage-label">Won</span>
+                                        <div class="stage-bar won" style="width: 30%"></div>
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6: AI-Powered Solutions -->
+            <div class="service-detail reverse" id="service-ai" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large ai">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span class="service-number">06</span>
+                        <h3>AI-Powered Solutions</h3>
+                        <p class="service-desc">
+                            Harness the power of Artificial Intelligence for your business. From AI content 
+                            generators to smart analytics dashboards, predictive tools to computer vision — 
+                            we build custom AI solutions that give you a competitive edge.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> Custom AI/ML Model Development</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> AI Content & Image Generators</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Predictive Analytics & Forecasting</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Document Processing & OCR</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Recommendation Engines</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> AI Integration with Existing Systems</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹50,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <div class="ai-demo">
+                                <div class="ai-visualization">
+                                    <div class="ai-node central"><i class="fas fa-brain"></i></div>
+                                    <div class="ai-node n1"><i class="fas fa-image"></i></div>
+                                    <div class="ai-node n2"><i class="fas fa-file-alt"></i></div>
+                                    <div class="ai-node n3"><i class="fas fa-chart-bar"></i></div>
+                                    <div class="ai-node n4"><i class="fas fa-comment-dots"></i></div>
+                                    <div class="ai-node n5"><i class="fas fa-microphone"></i></div>
+                                    <div class="ai-node n6"><i class="fas fa-eye"></i></div>
+                                    <svg class="ai-connections">
+                                        <line class="ai-line l1"/>
+                                        <line class="ai-line l2"/>
+                                        <line class="ai-line l3"/>
+                                        <line class="ai-line l4"/>
+                                        <line class="ai-line l5"/>
+                                        <line class="ai-line l6"/>
+                                    </svg>
+                                </div>
+                                <div class="ai-features-mini">
+                                    <span><i class="fas fa-circle"></i> Computer Vision</span>
+                                    <span><i class="fas fa-circle"></i> NLP</span>
+                                    <span><i class="fas fa-circle"></i> Prediction</span>
+                                    <span><i class="fas fa-circle"></i> Generation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 7: RCS Messaging -->
+            <div class="service-detail" id="service-rcs" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large rcs">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="service-number">07</span>
+                        <h3>RCS Messaging Solutions</h3>
+                        <p class="service-desc">
+                            RCS (Rich Communication Services) is the next evolution of SMS. Send rich, 
+                            interactive messages with images, carousels, buttons, and branded content — 
+                            directly in your customer's default messaging app. No app download needed!
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> Branded Business Messaging</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Rich Media — Images, Videos, Carousels</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Interactive Buttons & Quick Replies</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Verified Sender with Business Logo</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Campaign Analytics & Tracking</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Integration with CRM & E-commerce</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹15,000<span class="price-period">/month</span></span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <div class="rcs-demo">
+                                <div class="rcs-message">
+                                    <div class="rcs-brand">
+                                        <div class="rcs-logo">DC</div>
+                                        <div>
+                                            <strong>DigiCraft Fashion</strong>
+                                            <small>Verified Business ✓</small>
+                                        </div>
+                                    </div>
+                                    <div class="rcs-card">
+                                        <div class="rcs-img">🛍️ Summer Collection 2026</div>
+                                        <div class="rcs-card-body">
+                                            <h4>Flat 40% OFF on Summer Wear!</h4>
+                                            <p>Shop the trendiest collection. Use code SUMMER40.</p>
+                                        </div>
+                                        <div class="rcs-buttons">
+                                            <button>🛒 Shop Now</button>
+                                            <button>📋 View Catalog</button>
+                                            <button>📞 Call Us</button>
+                                        </div>
+                                    </div>
+                                    <div class="rcs-carousel-dots">
+                                        <span class="active"></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 8: Voice AI / IVR -->
+            <div class="service-detail reverse" id="service-voice" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large voice">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <span class="service-number">08</span>
+                        <h3>Voice AI / IVR Automation</h3>
+                        <p class="service-desc">
+                            Replace expensive call centers with intelligent Voice AI. Our automated IVR systems 
+                            handle incoming calls, route to the right department, take orders, book appointments, 
+                            and provide information — in Hindi and English.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> AI-Powered Voice Assistants</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Smart IVR Menu Systems</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Voice-to-Text Transcription</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Call Analytics & Recording</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Multi-language (Hindi + English)</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Integration with CRM & WhatsApp</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹30,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <div class="voice-demo">
+                                <div class="voice-circle">
+                                    <div class="voice-wave w1"></div>
+                                    <div class="voice-wave w2"></div>
+                                    <div class="voice-wave w3"></div>
+                                    <div class="voice-icon">
+                                        <i class="fas fa-microphone"></i>
+                                    </div>
+                                </div>
+                                <div class="voice-transcript">
+                                    <div class="vt-line">
+                                        <span class="vt-label">Caller:</span>
+                                        <span>"I want to book an appointment for tomorrow"</span>
+                                    </div>
+                                    <div class="vt-line ai-response">
+                                        <span class="vt-label">AI:</span>
+                                        <span>"Sure! I have slots at 10 AM, 2 PM, and 4 PM. Which works best?"</span>
+                                    </div>
+                                    <div class="vt-line">
+                                        <span class="vt-label">Caller:</span>
+                                        <span>"2 PM please"</span>
+                                    </div>
+                                    <div class="vt-line ai-response">
+                                        <span class="vt-label">AI:</span>
+                                        <span>"Done! ✅ Appointment booked for tomorrow at 2 PM. You'll receive a confirmation on WhatsApp."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 9: Cloud Setup & Migration -->
+            <div class="service-detail" id="service-cloud" data-aos="fade-up">
+                <div class="service-detail-content">
+                    <div class="service-info">
+                        <div class="service-icon-large cloud">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <span class="service-number">09</span>
+                        <h3>Cloud Setup & Migration</h3>
+                        <p class="service-desc">
+                            Move your business to the cloud for better performance, security, and scalability. 
+                            We help you set up, migrate, and manage cloud infrastructure on AWS, Azure, 
+                            or Google Cloud — so you can focus on growing your business.
+                        </p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check"></i> AWS / Azure / Google Cloud Setup</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Server & Database Migration</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Cloud Security & Backup</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> DevOps & CI/CD Pipeline</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> Cost Optimization & Monitoring</div>
+                            <div class="sf-item"><i class="fas fa-check"></i> 24/7 Cloud Management</div>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">₹25,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-visual">
+                        <div class="service-mockup">
+                            <div class="cloud-demo">
+                                <div class="cloud-architecture">
+                                    <div class="cloud-layer top">
+                                        <div class="cloud-icon-box"><i class="fas fa-cloud"></i><span>CDN</span></div>
+                                        <div class="cloud-icon-box"><i class="fas fa-shield-alt"></i><span>WAF</span></div>
+                                    </div>
+                                    <div class="cloud-arrow"><i class="fas fa-arrow-down"></i></div>
+                                    <div class="cloud-layer mid">
+                                        <div class="cloud-icon-box"><i class="fas fa-server"></i><span>App Server</span></div>
+                                        <div class="cloud-icon-box"><i class="fas fa-balance-scale"></i><span>Load Balancer</span></div>
+                                    </div>
+                                    <div class="cloud-arrow"><i class="fas fa-arrow-down"></i></div>
+                                    <div class="cloud-layer bottom">
+                                        <div class="cloud-icon-box"><i class="fas fa-database"></i><span>Database</span></div>
+                                        <div class="cloud-icon-box"><i class="fas fa-hdd"></i><span>Storage</span></div>
+                                        <div class="cloud-icon-box"><i class="fas fa-lock"></i><span>Backup</span></div>
+                                    </div>
+                                </div>
+                                <div class="cloud-providers">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO SECTION ==================== -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Our Work</span>
+                <h2>Projects That <span class="gradient-text">Speak for Themselves</span></h2>
+                <p>A glimpse of the solutions we've built for businesses across India.</p>
+            </div>
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Websites</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="ai">AI Solutions</button>
+            </div>
+            <div class="portfolio-grid" data-aos="fade-up">
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=350&fit=crop" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">E-Commerce</span>
+                            <h4>Fashion Store Website</h4>
+                            <p>Full e-commerce with Razorpay integration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=350&fit=crop" alt="Mobile App">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Mobile App</span>
+                            <h4>Food Delivery App</h4>
+                            <p>Flutter app with real-time tracking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="automation">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=500&h=350&fit=crop" alt="WhatsApp Bot">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">WhatsApp Bot</span>
+                            <h4>Restaurant Order Bot</h4>
+                            <p>Automated ordering on WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="ai">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=350&fit=crop" alt="AI Solution">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">AI Solution</span>
+                            <h4>Smart Analytics Dashboard</h4>
+                            <p>AI-powered business intelligence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&h=350&fit=crop" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Website</span>
+                            <h4>Healthcare Portal</h4>
+                            <p>Clinic website with appointment booking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="automation">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=350&fit=crop" alt="CRM Dashboard">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">CRM</span>
+                            <h4>Sales Automation Suite</h4>
+                            <p>Custom CRM with Zoho integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS SECTION ==================== -->
+    <section id="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-route"></i> How We Work</span>
+                <h2>Our Simple <span class="gradient-text">4-Step Process</span></h2>
+                <p>From idea to launch — we keep it transparent and efficient.</p>
+            </div>
+            <div class="process-timeline" data-aos="fade-up">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span>1</span>
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Discovery Call</h3>
+                    <p>We understand your business, goals, and requirements through a free consultation call.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span>2</span>
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Design & Plan</h3>
+                    <p>We create wireframes, mockups, and a detailed project plan with timelines.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span>3</span>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Our team builds your solution with regular updates and feedback loops.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span>4</span>
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Launch & Support</h3>
+                    <p>We deploy, test, and provide ongoing support to ensure everything runs smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-star"></i> Testimonials</span>
+                <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+            </div>
+            <div class="testimonials-grid" data-aos="fade-up">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"DigiCraft built our restaurant website with online ordering. Our orders increased by 40% in just 2 months. Absolutely worth every rupee!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Rajesh">
+                        <div>
+                            <strong>Rajesh Kumar</strong>
+                            <span>Owner, Spice Garden Restaurant, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The WhatsApp automation they set up for our clinic handles 200+ appointment bookings per month automatically. Our staff can finally focus on patients instead of answering calls!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=60&h=60&fit=crop&crop=face" alt="Dr. Priya">
+                        <div>
+                            <strong>Dr. Priya Sharma</strong>
+                            <span>Director, HealthFirst Clinic, Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Their AI chatbot handles 80% of our customer queries without any human intervention. The best investment we made for our e-commerce business."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Amit">
+                        <div>
+                            <strong>Amit Patel</strong>
+                            <span>Founder, TrendKart, Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section id="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Take Your Business Digital?</h2>
+                <p>Get a free consultation and custom proposal for your project. No commitment required.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-white">
+                        <i class="fas fa-paper-plane"></i> Get Free Consultation
+                    </a>
+                    <a href="https://wa.me/919876543210?text=Hi%20DigiCraft!%20I'm%20interested%20in%20your%20services." class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact Us</span>
+                <h2>Let's Build Something <span class="gradient-text">Amazing Together</span></h2>
+                <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            <div class="contact-grid" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@digicraft.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India (Serving Clients Pan-India)</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Service You're Interested In</label>
+                        <select>
+                            <option>Select a Service</option>
+                            <option>Website Design & Development</option>
+                            <option>WhatsApp Business Automation</option>
+                            <option>AI Chatbot Development</option>
+                            <option>Mobile App Development</option>
+                            <option>CRM & Business Process Automation</option>
+                            <option>AI-Powered Solutions</option>
+                            <option>RCS Messaging Solutions</option>
+                            <option>Voice AI / IVR Automation</option>
+                            <option>Cloud Setup & Migration</option>
+                            <option>Multiple Services / Custom</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tell Us About Your Project</label>
+                        <textarea rows="4" placeholder="Briefly describe what you need..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Estimated Budget</label>
+                        <select>
+                            <option>Select Budget Range</option>
+                            <option>₹10,000 - ₹25,000</option>
+                            <option>₹25,000 - ₹50,000</option>
+                            <option>₹50,000 - ₹1,00,000</option>
+                            <option>₹1,00,000 - ₹5,00,000</option>
+                            <option>₹5,00,000+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>Digi<strong>Craft</strong></span>
+                    </a>
+                    <p>Your trusted digital transformation partner. We help Indian businesses go digital, grow faster, and serve customers better.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#service-web">Website Development</a></li>
+                        <li><a href="#service-whatsapp">WhatsApp Automation</a></li>
+                        <li><a href="#service-chatbot">AI Chatbot</a></li>
+                        <li><a href="#service-app">Mobile App</a></li>
+                        <li><a href="#service-crm">CRM & Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>More Services</h4>
+                    <ul>
+                        <li><a href="#service-ai">AI Solutions</a></li>
+                        <li><a href="#service-rcs">RCS Messaging</a></li>
+                        <li><a href="#service-voice">Voice AI / IVR</a></li>
+                        <li><a href="#service-cloud">Cloud Setup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DigiCraft Solutions. All rights reserved. Made with ❤️ in India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20DigiCraft!%20I%20want%20to%20know%20more%20about%20your%20services." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
