@@ -3401,3 +3401,347 @@ footer {
         margin-right: 12px;
     }
 }
+/* ============================================
+   LIGHT THEME BUG FIXES — Comprehensive
+   ============================================ */
+
+/* WA Header text — keep white on green bg */
+[data-theme="light"] .wa-header strong,
+[data-theme="light"] .wa-header small {
+    color: #fff;
+}
+
+[data-theme="light"] .wa-header small {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* WA message text colors on new backgrounds */
+[data-theme="light"] .wa-msg p,
+[data-theme="light"] .wa-msg strong,
+[data-theme="light"] .wa-msg b {
+    color: #303030;
+}
+
+/* WA Typing dots — dark on light bg */
+[data-theme="light"] .wa-typing span {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="light"] .wa-typing-bubble {
+    background: #fff !important;
+}
+
+/* WA Catalog items inside received messages */
+[data-theme="light"] .catalog-item {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .catalog-item strong {
+    color: #303030;
+}
+
+[data-theme="light"] .catalog-item div {
+    color: #555;
+}
+
+/* WA Order Summary */
+[data-theme="light"] .wa-order-summary {
+    color: #303030;
+    background: rgba(37, 211, 102, 0.08);
+    border-color: rgba(37, 211, 102, 0.2);
+}
+
+/* WA Quick action buttons */
+[data-theme="light"] .wa-quick-btns button {
+    background: rgba(0, 150, 136, 0.08);
+    border-color: rgba(0, 150, 136, 0.25);
+    color: #00796B;
+}
+
+/* WA UPI link */
+[data-theme="light"] .wa-upi-link {
+    color: #fff;
+}
+
+/* WA Demo placeholder text */
+[data-theme="light"] .wa-demo-placeholder p {
+    color: var(--text-muted);
+}
+
+[data-theme="light"] .wa-demo-placeholder p strong {
+    color: var(--text-primary);
+}
+
+/* WA Replay button */
+[data-theme="light"] .wa-replay-btn {
+    color: #128C7E;
+    border-color: rgba(37, 211, 102, 0.25);
+}
+
+/* Mobile App Mockup — active category button text */
+[data-theme="light"] .app-cat.active {
+    color: #fff;
+}
+
+/* App card text */
+[data-theme="light"] .app-card-info strong {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .app-card-info span {
+    color: var(--text-muted);
+}
+
+/* App Header Demo - keep white text on gradient bg */
+[data-theme="light"] .app-header-demo {
+    color: #fff;
+}
+
+/* Bot Header - keep white text on gradient bg */
+[data-theme="light"] .bot-header strong,
+[data-theme="light"] .bot-header small {
+    color: #fff;
+}
+
+[data-theme="light"] .bot-header small {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Bot avatar - keep visible */
+[data-theme="light"] .bot-avatar {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+/* CRM Demo text */
+[data-theme="light"] .crm-header h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .crm-stat-card strong {
+    color: var(--text-primary);
+}
+
+/* Pipeline stage label & value */
+[data-theme="light"] .stage-label {
+    color: var(--text-secondary);
+}
+
+[data-theme="light"] .pipeline-stage > span:last-child {
+    color: var(--text-secondary);
+}
+
+/* AI Demo features */
+[data-theme="light"] .ai-features-mini span {
+    color: var(--text-muted);
+}
+
+/* RCS Card body text */
+[data-theme="light"] .rcs-card-body h4 {
+    color: var(--text-primary);
+}
+
+/* RCS img text stays white on gradient */
+[data-theme="light"] .rcs-img {
+    color: #fff;
+}
+
+/* Voice Demo */
+[data-theme="light"] .voice-icon {
+    color: #fff;
+}
+
+[data-theme="light"] .voice-wave {
+    border-color: var(--primary);
+}
+
+[data-theme="light"] .vt-label {
+    color: var(--primary);
+}
+
+/* Cloud provider images - boost visibility */
+[data-theme="light"] .cloud-providers img {
+    opacity: 0.8;
+}
+
+[data-theme="light"] .cloud-icon-box i {
+    color: var(--secondary);
+}
+
+[data-theme="light"] .cloud-icon-box span {
+    color: var(--text-muted);
+}
+
+/* Process Step text */
+[data-theme="light"] .step-icon span {
+    color: #fff;
+}
+
+/* Experience Badge text */
+[data-theme="light"] .experience-badge {
+    color: #fff;
+}
+
+/* CTA section — keep white text on gradient */
+[data-theme="light"] .cta-content h2,
+[data-theme="light"] .cta-content p {
+    color: #fff;
+}
+
+/* Portfolio tag on gradient — keep white */
+[data-theme="light"] .portfolio-tag {
+    color: #fff;
+}
+
+/* Portfolio overlay text */
+[data-theme="light"] .portfolio-overlay p {
+    color: var(--text-muted);
+}
+
+/* Btn Primary — keep white text on gradient */
+[data-theme="light"] .btn-primary {
+    color: #fff;
+}
+
+/* Btn WhatsApp — keep white text */
+[data-theme="light"] .btn-whatsapp {
+    color: #fff;
+}
+
+/* Btn WhatsApp Demo — keep white text */
+[data-theme="light"] .btn-whatsapp-demo {
+    color: #fff !important;
+}
+
+/* Nav CTA — keep white text on gradient */
+[data-theme="light"] .nav-cta {
+    color: #fff !important;
+}
+
+/* Back to top — keep white icon */
+[data-theme="light"] .back-to-top {
+    color: #fff;
+}
+
+/* WhatsApp float — keep white icon */
+[data-theme="light"] .whatsapp-float {
+    color: #fff;
+}
+
+/* Play button — keep white icon */
+[data-theme="light"] .play-btn {
+    color: #fff;
+}
+
+/* Scroll indicator text */
+[data-theme="light"] .scroll-indicator span {
+    color: var(--text-muted);
+}
+
+/* Typing indicator dots */
+[data-theme="light"] .typing-indicator span {
+    background: var(--text-muted);
+}
+
+/* Video modal close btn */
+[data-theme="light"] .modal-close {
+    color: #fff;
+}
+
+/* Service icon large — keep proper icon colors */
+[data-theme="light"] .service-icon-large {
+    background: rgba(90, 82, 213, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.whatsapp {
+    background: rgba(37, 211, 102, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.chatbot {
+    background: rgba(255, 107, 107, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.app {
+    background: rgba(0, 210, 255, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.crm {
+    background: rgba(255, 142, 83, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.ai {
+    background: rgba(168, 85, 247, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.rcs {
+    background: rgba(59, 130, 246, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.voice {
+    background: rgba(34, 197, 94, 0.08);
+}
+
+[data-theme="light"] .service-icon-large.cloud {
+    background: rgba(14, 165, 233, 0.08);
+}
+
+/* Contact icon */
+[data-theme="light"] .contact-icon {
+    background: rgba(90, 82, 213, 0.08);
+}
+
+/* Stars keep gold */
+[data-theme="light"] .stars {
+    color: #F59E0B;
+}
+
+/* Testimonial text */
+[data-theme="light"] .testimonial-card > p {
+    color: var(--text-secondary);
+}
+
+/* Footer links */
+[data-theme="light"] .footer-links h4 {
+    color: var(--text-primary);
+}
+
+/* Gradient text stays gradient — ensure clip works */
+[data-theme="light"] .gradient-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Stat number / plus stays gradient */
+[data-theme="light"] .stat-number,
+[data-theme="light"] .stat-plus {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mockup overlay text */
+[data-theme="light"] .mockup-overlay span {
+    color: var(--text-primary);
+}
+
+/* App tag */
+[data-theme="light"] .app-tag {
+    background: rgba(255, 107, 107, 0.12);
+    color: #E53935;
+}
+
+/* WA time in light mode messages */
+[data-theme="light"] .wa-msg.sent .wa-time {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .wa-msg.received .wa-time {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Fix logo text in light mode */
+[data-theme="light"] .logo span {
+    color: var(--text-primary);
+}

@@ -379,3 +379,37 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+// ---- Theme Toggle ----
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+const root = document.documentElement;
+
+const savedTheme = localStorage.getItem('rudrai-theme') || 'dark';
+if (savedTheme === 'light') {
+    root.setAttribute('data-theme', 'light');
+    if (themeIcon) themeIcon.className = 'fas fa-sun';
+} else {
+    root.removeAttribute('data-theme');
+    if (themeIcon) themeIcon.className = 'fas fa-moon';
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = root.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        if (themeIcon) themeIcon.style.transform = 'rotate(360deg) scale(0)';
+        setTimeout(() => {
+            if (newTheme === 'light') {
+                root.setAttribute('data-theme', 'light');
+                if (themeIcon) themeIcon.className = 'fas fa-sun';
+            } else {
+                root.removeAttribute('data-theme');
+                if (themeIcon) themeIcon.className = 'fas fa-moon';
+            }
+            localStorage.setItem('rudrai-theme', newTheme);
+            if (themeIcon) themeIcon.style.transform = 'rotate(0deg) scale(1)';
+        }, 250);
+    });
+}

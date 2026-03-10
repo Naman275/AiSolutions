@@ -596,3 +596,324 @@ img { max-width: 100%; display: block; }
 
 
 
+
+/* ============================================
+   DEMO REEL — LIGHT THEME
+   ============================================ */
+[data-theme="light"] {
+    --bg-dark: #f5f5ff;
+    --bg-card: #ffffff;
+    --bg-card-light: #f0f0ff;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a6a;
+    --text-muted: #6b6b8d;
+    --border: rgba(108, 99, 255, 0.18);
+    --shadow: 0 20px 60px rgba(108, 99, 255, 0.08);
+    --primary: #5A52D5;
+    --primary-light: #6C63FF;
+}
+
+/* Demo Nav */
+[data-theme="light"] .demo-nav {
+    background: rgba(245, 245, 255, 0.92);
+}
+
+/* Demo CTA button */
+[data-theme="light"] .demo-cta {
+    color: #fff;
+}
+
+/* Demo sidebar */
+[data-theme="light"] .sidebar-item .sidebar-dot {
+    background: var(--text-muted);
+}
+
+/* Intro cards */
+[data-theme="light"] .intro-card {
+    background: var(--bg-card);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+/* Demo section flow items */
+[data-theme="light"] .demo-flow-item {
+    background: var(--bg-card);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+/* Brief row */
+[data-theme="light"] .brief-row {
+    background: rgba(108, 99, 255, 0.03);
+}
+
+/* Wireframe & final design */
+[data-theme="light"] .wireframe-preview {
+    background: rgba(108, 99, 255, 0.03);
+}
+
+[data-theme="light"] .wf-nav {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .wf-hero-block {
+    background: rgba(108, 99, 255, 0.06);
+}
+
+[data-theme="light"] .wf-card-block {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .wf-footer-block {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .final-design-preview {
+    background: #eeeeff;
+}
+
+[data-theme="light"] .fd-nav {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .fd-hero {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.1), rgba(0, 210, 255, 0.05));
+}
+
+[data-theme="light"] .fd-hero-text button {
+    color: #fff;
+}
+
+/* Browser frame */
+[data-theme="light"] .browser-frame {
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .browser-bar {
+    background: #f0f0f5;
+}
+
+[data-theme="light"] .browser-url {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text-muted);
+}
+
+/* WA phone frame */
+[data-theme="light"] .wa-phone-frame {
+    background: #e0e0e8;
+    border-color: #c8c8d5;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .wa-phone-notch {
+    background: #e0e0e8;
+}
+
+[data-theme="light"] .wa-phone-screen {
+    background: #E5DDD5;
+}
+
+[data-theme="light"] .wa-app-header {
+    background: #075E54;
+}
+
+/* Keep WA header text white on green */
+[data-theme="light"] .wa-app-info strong,
+[data-theme="light"] .wa-app-info small,
+[data-theme="light"] .wa-app-actions {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .wa-app-info strong {
+    color: #fff;
+}
+
+/* WA messages */
+[data-theme="light"] .wa-m.in {
+    background: #fff;
+    color: #303030;
+}
+
+[data-theme="light"] .wa-m.out {
+    background: #DCF8C6;
+    color: #303030;
+}
+
+[data-theme="light"] .wa-m .wa-t {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .wa-m .wa-btns button {
+    background: rgba(0, 150, 136, 0.08);
+    color: #00796B;
+}
+
+[data-theme="light"] .wa-ci {
+    background: rgba(0, 0, 0, 0.04);
+    color: #303030;
+}
+
+[data-theme="light"] .wa-input-bar {
+    background: #f0f2f5;
+}
+
+[data-theme="light"] .wa-input-bar input {
+    background: #fff;
+    color: #303030;
+}
+
+[data-theme="light"] .wa-input-bar i {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* WA flow steps */
+[data-theme="light"] .wa-flow-step {
+    background: var(--bg-card);
+}
+
+/* Chatbot window */
+[data-theme="light"] .cb-header strong,
+[data-theme="light"] .cb-header small {
+    color: #fff;
+}
+
+[data-theme="light"] .cb-avatar {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+[data-theme="light"] .cb-input-area input {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .cb-input-area button {
+    color: #fff;
+}
+
+/* App phone mockup */
+[data-theme="light"] .app-phone {
+    background: #e0e0e8;
+    border-color: #c8c8d5;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .app-phone-notch {
+    background: #e0e0e8;
+}
+
+[data-theme="light"] .app-screens-wrapper {
+    background: var(--bg-card);
+}
+
+/* App header gradient — keep white text */
+[data-theme="light"] .app-s-header.gradient-bg {
+    color: #fff;
+}
+
+[data-theme="light"] .app-s-search {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .app-s-cat {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .app-s-rest {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="light"] .app-bottom-nav {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .app-add-btn.added {
+    color: #fff;
+}
+
+[data-theme="light"] .app-cart-bar {
+    color: #fff;
+}
+
+[data-theme="light"] .app-cart-bar button {
+    color: #fff;
+}
+
+/* Tracking */
+[data-theme="light"] .tracking-point {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .rider-card {
+    background: rgba(108, 99, 255, 0.03);
+}
+
+[data-theme="light"] .app-nav-btn.active {
+    color: #fff;
+}
+
+/* CRM demo */
+[data-theme="light"] .crm-date-filter button {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .crm-date-filter button.active {
+    color: #fff;
+}
+
+[data-theme="light"] .crm-metric {
+    background: rgba(108, 99, 255, 0.03);
+}
+
+/* AI demo */
+[data-theme="light"] .ai-doc {
+    background: rgba(108, 99, 255, 0.03);
+}
+
+[data-theme="light"] .ai-doc-line {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .ai-prompt {
+    background: rgba(108, 99, 255, 0.03);
+}
+
+/* SMS / RCS demo */
+[data-theme="light"] .sms-msg {
+    background: #f0f0f5;
+}
+
+[data-theme="light"] .rcs-offer-badge {
+    background: #fff;
+}
+
+/* Voice demo */
+[data-theme="light"] .ct-line.caller {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .call-ctrl {
+    color: #fff;
+}
+
+/* Cloud demo */
+[data-theme="light"] .rack-server {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* Keep button/badge white text on colored bg */
+[data-theme="light"] .btn-demo-primary {
+    color: #fff;
+}
+
+[data-theme="light"] .btn-demo-wa {
+    color: #fff;
+}
+
+[data-theme="light"] .replay-btn {
+    color: #128C7E;
+}
+
+[data-theme="light"] .demo-section .demo-tag {
+    background: rgba(108, 99, 255, 0.06);
+}

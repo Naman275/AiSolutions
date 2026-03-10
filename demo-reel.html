@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/demo-reel.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <script>
+        (function() {
+            const t = localStorage.getItem('rudrai-theme');
+            if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+        })();
+    </script>
 </head>
 <body>
     <!-- Top Bar -->
     <nav class="demo-nav">
         <a href="index.html" class="demo-logo"><i class="fas fa-arrow-left"></i> Back to Site</a>
         <span class="demo-title"><i class="fas fa-play-circle"></i> Interactive Demo Reel</span>
-        <a href="index.html#contact" class="demo-cta">Get a Quote <i class="fas fa-arrow-right"></i></a>
+        <div style="display:flex;align-items:center;gap:10px;">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" style="background:rgba(255,255,255,0.08);border:1px solid rgba(108,99,255,0.3);color:var(--text-secondary);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:0.9rem;transition:all 0.3s;">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <a href="index.html#contact" class="demo-cta">Get a Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
     </nav>
 
     <!-- Demo Navigation Sidebar -->
