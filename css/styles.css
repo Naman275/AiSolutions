@@ -896,6 +896,7 @@ img {
     border-radius: var(--radius-sm);
     text-align: center;
     box-shadow: var(--shadow);
+    color: #fff;
 }
 
 .exp-number {
@@ -1188,6 +1189,7 @@ img {
     font-size: 1.5rem;
     margin-bottom: 12px;
     transition: var(--transition);
+    color: #fff;
 }
 
 .play-btn:hover {
@@ -1342,6 +1344,7 @@ img {
     display: flex;
     align-items: center;
     gap: 12px;
+    color: #fff;
 }
 
 .bot-avatar {
@@ -1370,6 +1373,7 @@ img {
 .bot-header strong {
     display: block;
     font-size: 0.95rem;
+    color: #fff;
 }
 
 .bot-header small {
@@ -1402,6 +1406,7 @@ img {
     background: var(--primary);
     margin-left: auto;
     border-bottom-right-radius: 4px;
+    color: #fff;
 }
 
 .bot-quick-replies {
@@ -1499,6 +1504,7 @@ img {
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
+    color: #fff;
 }
 
 .app-search {
@@ -1534,6 +1540,7 @@ img {
 .app-cat.active {
     background: var(--primary);
     border-color: var(--primary);
+    color: #fff;
 }
 
 .app-card {
@@ -1805,6 +1812,7 @@ img {
     justify-content: center;
     font-weight: 700;
     font-size: 0.85rem;
+    color: #fff;
 }
 
 .rcs-brand strong {
@@ -1921,6 +1929,7 @@ img {
     font-size: 1.5rem;
     z-index: 2;
     position: relative;
+    color: #fff;
 }
 
 .voice-wave {
@@ -2154,6 +2163,7 @@ img {
     font-weight: 600;
     display: inline-block;
     margin-bottom: 8px;
+    color: #fff;
 }
 
 .portfolio-overlay h4 {
@@ -2344,6 +2354,7 @@ img {
     text-align: center;
     position: relative;
     overflow: hidden;
+    color: #fff;
 }
 
 .cta-content::before {
