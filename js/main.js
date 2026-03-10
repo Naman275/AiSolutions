@@ -281,6 +281,138 @@ document.addEventListener('DOMContentLoaded', () => {
             shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
         });
     });
+    // ---- WhatsApp Live Demo ----
+    const waLiveDemoBtn = document.getElementById('waLiveDemoBtn');
+    const waLiveMessages = document.getElementById('waLiveMessages');
+    const waReplayBtn = document.getElementById('waReplayBtn');
+
+    const waConvo = [
+        { type: 'out', text: 'Hi', delay: 800 },
+        { type: 'typing', delay: 600 },
+        { type: 'in', text: 'Hello! 👋 Welcome to <b>Sharma\'s Bakery</b>! I\'m your automated assistant.\n\nWhat would you like to do?', delay: 400,
+          buttons: ['🍰 Order Cake', '🍞 View Menu', '📍 Store Location', '📞 Call Us'] },
+        { type: 'out', text: '🍰 Order Cake', delay: 1500 },
+        { type: 'typing', delay: 800 },
+        { type: 'in', text: 'Great choice! 🎂 Here are our popular cakes:', delay: 400,
+          catalog: [
+            { emoji: '🎂', name: 'Red Velvet', price: '₹699' },
+            { emoji: '🍫', name: 'Chocolate Truffle', price: '₹599' },
+            { emoji: '🍓', name: 'Strawberry Delight', price: '₹549' }
+          ]},
+        { type: 'in', text: 'Reply with the cake name to order 👆', delay: 800 },
+        { type: 'out', text: 'Red Velvet', delay: 1200 },
+        { type: 'typing', delay: 600 },
+        { type: 'in', text: '🎂 <b>Red Velvet Cake - ₹699</b>\n\nHow many would you like?', delay: 400,
+          buttons: ['1', '2', '3'] },
+        { type: 'out', text: '1', delay: 1000 },
+        { type: 'typing', delay: 500 },
+        { type: 'in', text: '📍 Please share your <b>delivery address</b>:', delay: 400 },
+        { type: 'out', text: '42, MG Road, Connaught Place, Delhi', delay: 1500 },
+        { type: 'typing', delay: 800 },
+        { type: 'in', text: '✅ Here\'s your order summary:', delay: 300,
+          orderSummary: {
+            items: '🎂 Red Velvet Cake × 1',
+            address: '📍 42, MG Road, CP, Delhi',
+            total: '💰 Total: ₹699',
+            delivery: '🚚 Delivery: 45 min',
+          }},
+        { type: 'in', text: 'Proceed to pay?', delay: 600,
+          buttons: ['✅ Pay Now', '❌ Cancel'] },
+        { type: 'out', text: '✅ Pay Now', delay: 1200 },
+        { type: 'typing', delay: 600 },
+        { type: 'in', text: '💳 Pay <b>₹699</b> via UPI:', delay: 300, upiLink: true },
+        { type: 'in', text: '✅ <b>Payment Received!</b>\n\n🎉 Order <b>#ORD-1847</b> confirmed!\n\n🎂 Red Velvet Cake × 1\n📍 42, MG Road, CP, Delhi\n⏰ Arriving by <b>11:18 AM</b>\n🚚 Delivery: Rahul K.\n\nThank you! ❤️🍰', delay: 2500 }
+    ];
+
+    function createWALiveMsg(msg) {
+        const div = document.createElement('div');
+
+        if (msg.type === 'typing') {
+            div.className = 'wa-msg received wa-typing-bubble';
+            div.innerHTML = '<div class="wa-typing"><span></span><span></span><span></span></div>';
+            return div;
+        }
+
+        div.className = `wa-msg ${msg.type === 'in' ? 'received' : 'sent'}`;
+        let html = `<p>${msg.text.replace(/\n/g, '<br>')}</p>`;
+
+        if (msg.catalog) {
+            html += '<div class="wa-catalog">';
+            msg.catalog.forEach(item => {
+                html += `<div class="catalog-item"><div class="catalog-img">${item.emoji}</div><div><strong>${item.name}</strong><br>${item.price}</div></div>`;
+            });
+            html += '</div>';
+        }
+
+        if (msg.buttons) {
+            html += '<div class="wa-quick-btns">';
+            msg.buttons.forEach(b => html += `<button>${b}</button>`);
+            html += '</div>';
+        }
+
+        if (msg.orderSummary) {
+            const s = msg.orderSummary;
+            html += `<div class="wa-order-summary">${s.items}<br>${s.address}<br>${s.total}<br>${s.delivery}</div>`;
+        }
+
+        if (msg.upiLink) {
+            html += '<div class="wa-upi-link">📱 Pay via Google Pay / PhonePe</div>';
+        }
+
+        const now = new Date();
+        const h = now.getHours();
+        const m = String(now.getMinutes()).padStart(2, '0');
+        const ampm = h >= 12 ? 'PM' : 'AM';
+        const h12 = h % 12 || 12;
+        html += `<span class="wa-time">${h12}:${m} ${ampm}</span>`;
+
+        div.innerHTML = html;
+        return div;
+    }
+
+    function playWALiveDemo() {
+        if (!waLiveMessages) return;
+        waLiveMessages.innerHTML = '';
+        if (waReplayBtn) waReplayBtn.style.display = 'none';
+
+        let totalDelay = 0;
+        let typingEl = null;
+
+        waConvo.forEach((msg) => {
+            totalDelay += msg.delay;
+
+            setTimeout(() => {
+                // Remove typing indicator if present
+                if (typingEl) { typingEl.remove(); typingEl = null; }
+
+                if (msg.type === 'typing') {
+                    typingEl = createWALiveMsg(msg);
+                    waLiveMessages.appendChild(typingEl);
+                } else {
+                    waLiveMessages.appendChild(createWALiveMsg(msg));
+                }
+                waLiveMessages.scrollTop = waLiveMessages.scrollHeight;
+            }, totalDelay);
+        });
+
+        // Show replay button after demo finishes
+        setTimeout(() => {
+            if (waReplayBtn) waReplayBtn.style.display = 'block';
+        }, totalDelay + 1000);
+    }
+
+    if (waLiveDemoBtn) {
+        waLiveDemoBtn.addEventListener('click', () => {
+            const demoEl = document.getElementById('waLiveDemo');
+            if (demoEl) demoEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(playWALiveDemo, 500);
+        });
+    }
+
+    if (waReplayBtn) {
+        waReplayBtn.addEventListener('click', playWALiveDemo);
+    }
+
 
     // ---- Keyboard Escape for modals ----
     document.addEventListener('keydown', (e) => {
@@ -319,4 +451,5 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
