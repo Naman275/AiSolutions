@@ -1230,6 +1230,7 @@ img {
 
 .wa-header {
     background: #075E54;
+    color: #fff;
     padding: 16px 20px;
     display: flex;
     align-items: center;
@@ -1258,8 +1259,8 @@ img {
 .wa-header strong {
     display: block;
     font-size: 0.95rem;
+    color: #fff;
 }
-
 .wa-header small {
     color: rgba(255, 255, 255, 0.85);
     font-size: 0.75rem;
@@ -3406,13 +3407,20 @@ footer {
    ============================================ */
 
 /* WA Header text — keep white on green bg */
-[data-theme="light"] .wa-header strong,
-[data-theme="light"] .wa-header small {
-    color: #fff;
+[data-theme="light"] .wa-header {
+    color: #fff !important;
+}
+
+[data-theme="light"] .wa-header strong {
+    color: #fff !important;
 }
 
 [data-theme="light"] .wa-header small {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[data-theme="light"] .wa-header div {
+    color: #fff !important;
 }
 
 /* WA message text colors on new backgrounds */
