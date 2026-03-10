@@ -1,5 +1,5 @@
 /* ============================================
-   DigiCraft — Demo Reel Styles
+   RudrAI — Demo Reel Styles
    ============================================ */
 
 :root {
@@ -580,3 +580,4 @@ img { max-width: 100%; display: block; }
     .demo-final-content h2 { font-size: 1.8rem; }
     .demo-final-btns { flex-direction: column; align-items: center; }
 }
+

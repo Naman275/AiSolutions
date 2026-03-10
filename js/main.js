@@ -1,5 +1,5 @@
 /* ============================================
-   DigiCraft Solutions — Main JavaScript
+   RudrAI Solutions — Main JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -319,3 +319,4 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+

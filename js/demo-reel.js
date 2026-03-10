@@ -1,5 +1,5 @@
 /* ============================================
-   DigiCraft — Demo Reel Interactive JavaScript
+   RudrAI — Demo Reel Interactive JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -369,3 +369,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 });
     crmObserver.observe(crmSection);
 });
+
