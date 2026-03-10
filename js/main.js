@@ -109,6 +109,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // ---- Theme Toggle (Light / Dark) ----
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const root = document.documentElement;
+
+    // Check saved theme or default to dark
+    const savedTheme = localStorage.getItem('rudrai-theme') || 'dark';
+    applyTheme(savedTheme);
+
+    function applyTheme(theme) {
+        if (theme === 'light') {
+            root.setAttribute('data-theme', 'light');
+            themeIcon.className = 'fas fa-sun';
+        } else {
+            root.removeAttribute('data-theme');
+            themeIcon.className = 'fas fa-moon';
+        }
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = root.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        // Animate the icon
+        themeIcon.style.transform = 'rotate(360deg) scale(0)';
+        
+        setTimeout(() => {
+            applyTheme(newTheme);
+            localStorage.setItem('rudrai-theme', newTheme);
+            themeIcon.style.transform = 'rotate(0deg) scale(1)';
+        }, 250);
+    });
+
     // ---- Typing Effect ----
     const typedTextEl = document.getElementById('typed-text');
     const words = [
