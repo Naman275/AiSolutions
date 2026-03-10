@@ -138,8 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(playWADemo, 500);
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.15 });
     waObserver.observe(waSection);
+
+    // Also auto-play after a short delay as a fallback
+    setTimeout(() => {
+        if (!waPlayed && waChatArea) {
+            waPlayed = true;
+            playWADemo();
+        }
+    }, 2000);
 
     if (replayWABtn) {
         replayWABtn.addEventListener('click', () => {
@@ -369,4 +377,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 });
     crmObserver.observe(crmSection);
 });
+
 
