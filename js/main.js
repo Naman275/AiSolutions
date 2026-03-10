@@ -58,6 +58,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // ---- Services Dropdown (Desktop) ----
+    const navDropdown = document.querySelector('.nav-dropdown');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    
+    if (dropdownToggle) {
+        // Toggle on click (for touch devices)
+        dropdownToggle.addEventListener('click', (e) => {
+            // If clicking the arrow area, toggle dropdown
+            if (e.target.closest('i') || window.innerWidth <= 768) {
+                e.preventDefault();
+                navDropdown.classList.toggle('active');
+            }
+        });
+    }
+
+    // Close desktop dropdown when clicking a service link
+    document.querySelectorAll('.dropdown-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navDropdown) navDropdown.classList.remove('active');
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navDropdown && !navDropdown.contains(e.target)) {
+            navDropdown.classList.remove('active');
+        }
+    });
+
+    // ---- Services Dropdown (Mobile) ----
+    const mobileDropdown = document.querySelector('.mobile-dropdown');
+    const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+    
+    if (mobileDropdownToggle) {
+        mobileDropdownToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileDropdown.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking a service link in mobile dropdown
+    document.querySelectorAll('.mobile-dropdown-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (mobileDropdown) mobileDropdown.classList.remove('active');
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
     // ---- Typing Effect ----
     const typedTextEl = document.getElementById('typed-text');
     const words = [
