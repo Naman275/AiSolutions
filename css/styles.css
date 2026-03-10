@@ -104,6 +104,14 @@ img {
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
     margin: 0 auto 16px;
+    display: none;
+}
+
+.loader-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+    filter: drop-shadow(0 0 20px rgba(108, 99, 255, 0.4));
 }
 
 .loader span {
@@ -155,11 +163,17 @@ img {
     color: var(--text-primary);
 }
 
-.logo i {
-    font-size: 1.6rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo-svg {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 8px rgba(108, 99, 255, 0.3));
+    transition: var(--transition);
+}
+
+.logo:hover .logo-svg {
+    filter: drop-shadow(0 0 16px rgba(108, 99, 255, 0.6));
+    transform: scale(1.05);
 }
 
 .nav-links {
@@ -2607,4 +2621,5 @@ footer {
         flex-direction: column;
     }
 }
+
 
